@@ -1,0 +1,26 @@
+.skill {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.skill li img {
+  width: 50px;
+  height: 50px;
+  border: 1px solid rgb(255, 255, 255);
+  margin: 10px;
+}
+
+li {
+  list-style: none;
+}
+
+@media (max-width: 576px) {
+  .skill {
+    grid-template-columns: 1fr;
+  }
+
+  li {
+    font-size: smaller;
+  }
+}

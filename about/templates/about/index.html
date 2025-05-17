@@ -1,0 +1,25 @@
+{% extends 'base.html' %} {% load static %}
+<!-- Css App About -->
+{% block css_app %}
+<link rel="stylesheet" href="{% static 'about/css/styles.css' %}" />
+{% endblock %}
+
+<!-- Content App About -->
+{% block content_contents %}
+<div class="content-header">
+  <h3>{{title}}</h3>
+</div>
+
+<div class="content-content">
+  <div class="description">
+    <h3>Hi, Welcome</h3>
+    <h2>I am Achmad Irfan</h2>
+    <!-- Load Summary -->
+    {% for item in summary %}
+    <p>{{item.isi}}</p>
+    {% endfor %}
+  </div>
+  <!-- Load Foto Profil -->
+  <img src="{% static "about/img/foton.png" %}" alt="gambar" >
+</div>
+{% endblock %}

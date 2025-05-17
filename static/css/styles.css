@@ -1,0 +1,138 @@
+.bg-dark-blue {
+  background-color: rgb(3, 3, 19);
+}
+body {
+  background-color: rgb(216, 217, 227);
+}
+
+.content {
+  background: linear-gradient(to top, rgb(0, 0, 0), rgb(28, 2, 2));
+  color: white;
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 1fr 2fr 1fr;
+  justify-content: space-around;
+  height: 80vh;
+  margin: 10px auto;
+  padding: 20px;
+  width: 100%;
+}
+
+.content img {
+  width: 60vh;
+  height: 70vh;
+  opacity: 60%;
+  justify-self: start;
+  padding: 20px;
+}
+
+.frontpage {
+  align-content: center;
+  text-align: end;
+}
+
+button {
+  padding: 10px 8px;
+  background-color: rgb(0, 0, 36);
+  border-radius: 10px;
+  margin: 50px;
+  color: blue;
+}
+
+button:hover {
+  background-color: #ffffff;
+  color: #000;
+}
+
+.navbar img {
+  width: 70px;
+  height: 70px;
+}
+.navbar-nav .nav-link {
+  font-size: 1.2rem;
+  color: rgb(234, 224, 224);
+}
+.navbar-nav {
+  gap: 1.4rem;
+}
+
+.icon {
+  display: flex;
+  gap: 1.2rem;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.icon i {
+  font-size: 1.2rem;
+  color: rgb(237, 222, 222);
+}
+
+.footer {
+  background-color: rgb(2, 4, 37);
+  color: aliceblue;
+}
+
+.footer p {
+  text-align: center;
+  font-size: large;
+}
+
+@media (max-width: 756px) {
+  img {
+    display: none;
+  }
+
+  .navbar img {
+    display: block;
+  }
+
+  .navbar-toggler {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  .content {
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .frontpage {
+    text-align: start;
+  }
+  h4,
+  h2,
+  h3 {
+    font-size: larger;
+  }
+
+  button {
+    padding: 0 4px;
+    border-radius: 10px;
+    margin: 10px;
+    color: rgb(0, 0, 0);
+  }
+
+  button i,
+  button a {
+    color: #ffffff;
+  }
+
+  .frontpage {
+    align-content: center;
+    text-align: center;
+  }
+
+  .icon {
+    border: 1px solid rgb(255, 255, 255);
+    display: flex;
+    padding: 10px;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .footer p {
+    font-size: medium;
+  }
+}

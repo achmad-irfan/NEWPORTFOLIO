@@ -1,0 +1,48 @@
+{% extends 'about/index.html' %} {% load static %}
+<!-- Css App About -->
+{% block css_app %}
+<link rel="stylesheet" href="{% static 'about/css/styles.css' %}" />
+<link rel="stylesheet" href="{% static 'project/css/styles.css' %}" />
+{% endblock %}
+
+<!-- Content App About -->
+{% block content_contents %}
+<div class="content-header">
+  <h3>{{title}}</h3>
+</div>
+<div class="content-content">
+  <div class="classification">
+    <a class="nav-link active" aria-current="page" href="{% url 'app_project:projects_category' 'ALL' %}" data-category="ALL">ALL</a>
+    {% for item in item %}
+    <div class="itemClassification">
+      <a class="nav-link active" aria-current="page" href="{% url 'app_project:projects_category' item %}" data-category="{{ items }}">{{ item|upper }}</a>
+    </div>
+    {% endfor %}
+  </div>
+  <div class="thumbnail">
+    {% for item in page_obj %}
+    <a href="{% url 'app_project:detail' item.slug %}">
+      <img src="{{item.gambar.url}}" alt="alt" />
+    </a>
+    {% endfor %}
+  </div>
+  <div class="paginator">
+    <div class="leftPaginator">
+      {% if is_paginated %} {% if page_obj.has_previous %}
+      <a href="{% url 'app_project:project_page' page_obj.previous_page_number %}" title=""> &laquo</a>
+      {% else %} <span>&laquo</span>
+      {% endif %} {% endif %}
+    </div>
+    <div class="Page">
+      {% for item in paginator.page_range %}
+      <a href="{% url 'app_project:project_page' item %}" title="">{{item}}</a>
+      {% endfor %}
+    </div>
+    <div class="RightPaginator">
+      {% if is_paginated %} {% if page_obj.has_next %}
+      <a href="{% url 'app_project:project_page' page_obj.next_page_number %}" title=""> &raquo</a>
+      {% else %} <span>&raquo</span> {% endif %} {% endif %}
+    </div>
+  </div>
+</div>
+{% endblock %}

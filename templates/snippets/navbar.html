@@ -1,0 +1,19 @@
+{% load static %}
+<nav class="navbar ms-auto navbar-expand-md bg-dark-blue">
+  <div class="container">
+    <a class="navbar-brand" href="/"> <img src="{% static "img/logo.png"%}" alt="gambar"> </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+      <div class="navbar-nav mx-auto">
+        <a class="nav-link" href="/">Home</a>
+        <a class="nav-link" href="{% url 'app_about:about' %}">About</a>
+        <a class="nav-link" href="{% url 'app_skill:skill' %}">Skill</a>
+        <a class="nav-link" href="{% url 'app_project:project' %}">Projects</a>
+        <a class="nav-link" href="{% url 'app_services:services' %}">Services</a>
+        <a class="nav-link" href="{% url 'app_contact:contact' %}">Contact</a>
+      </div>
+    </div>
+  </div>
+</nav>

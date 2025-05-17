@@ -1,0 +1,109 @@
+.content-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.classification {
+  background-color: rgb(3, 22, 53);
+  border: 4px solid rgb(210, 186, 186);
+  box-shadow: 5px 5px white;
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  padding: 10px;
+  border-radius: 5%;
+}
+
+.classification h3 {
+  background-color: rgb(1, 30, 56);
+  border-radius: 0.1;
+  border: 5px solid rgb(62, 27, 27);
+  padding: 15px;
+  font-size: small;
+}
+
+.thumbnail {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+}
+.thumbnail img {
+  width: 300px;
+  height: 200px;
+  border-radius: 0;
+  border: 5px solid white;
+}
+
+.carousel {
+  border: 5px solid rgb(255, 255, 255);
+}
+
+.detail {
+  display: grid;
+  grid-template-columns: 2.5fr 1fr;
+}
+.infomation {
+  border: 5px solid rgb(241, 235, 235);
+  padding: 15px;
+}
+button {
+  margin: 5px;
+}
+
+.paginator {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.Page a {
+  color: white;
+}
+
+@media (max-width: 756px) {
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  .classification {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 100%;
+    font-size: small;
+    gap: 5px;
+  }
+
+  .classification a {
+    border: 2px solid white;
+    padding: 3px;
+    text-align: center;
+    background-color: rgb(110, 132, 152);
+  }
+
+  .classification h3 {
+    padding: 1px;
+  }
+
+  .thumbnail {
+    gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .thumbnail img {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+    border: 0;
+    border: 2px solid white;
+  }
+
+  .paginator {
+    font-size: smaller;
+  }
+
+  .detail {
+    display: flex;
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,30 @@
+{% extends "base.html" %} {% load static %} {% block content_contents %}
+<img src="{% static 'img/foto1.png'%}" alt="" />
+
+<div class="frontpage">
+  <h3>Welcome,</h3>
+  <h3>I am Achmad Irfan A.</h3>
+  <h4>Data Analyst | Data Scientist | Python Developer</h4>
+  <h2>Data is My World</h2>
+  <button>
+    <a href="{% static 'doc/cv.pdf' %}" download class="btn">Download CV <i class="bi bi-cloud-download-fill"></i></a>
+  </button>
+</div>
+<div class="icon">
+  <a href="https://www.linkedin.com/in/achmad-irfan-afandi-9661131a6/">
+    <i class="bi bi-linkedin bi-lg custom-icon"> </i>
+  </a>
+  <a href="https://github.com/achmad-irfan">
+    <i class="bi bi-github bi-lg custom-icon"> </i>
+  </a>
+  <a href="https://www.facebook.com/achmad.irfan.754">
+    <i class="bi bi-facebook bi-lg custom-icon"> </i>
+  </a>
+  <a href="https://www.facebook.com/achmad.irfan.754">
+    <i class="bi bi-twitter bi-lg custom-icon"> </i>
+  </a>
+  <a href="https://www.facebook.com/achmad.irfan.754">
+    <i class="bi bi-instagram bi-lg custom-icon"> </i>
+  </a>
+</div>
+{% endblock %}

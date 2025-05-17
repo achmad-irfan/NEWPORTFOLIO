@@ -1,0 +1,38 @@
+.contact {
+  display: flex;
+  gap: 50px;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.contactItem {
+  background-color: rgb(58, 42, 102);
+  padding: 20px;
+  width: 30%;
+  border-radius: 5%;
+  box-shadow: 10px 10px white;
+  text-align: center;
+}
+
+i {
+  font-size: 70px;
+}
+
+@media screen and (max-width: 756px) {
+  .contact {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .contactItem {
+    width: 50%;
+    padding: 5px;
+  }
+  i {
+    font-size: 40px;
+  }
+
+  h3,
+  h4 {
+    font-size: small;
+  }
+}
