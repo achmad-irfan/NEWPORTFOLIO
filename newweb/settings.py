@@ -26,7 +26,7 @@ SECRET_KEY = "django-insecure-br^yd&toaoh*bul7h0w*894@io^m*hqt256%&b35=w3tz#84r!
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['192.168.1.8','127.0.0.1']
+ALLOWED_HOSTS = ['192.168.1.8','127.0.0.1','www.achmad-irfan.my.id']
 
 
 # Application definition
@@ -82,9 +82,9 @@ WSGI_APPLICATION = "newweb.wsgi.application"
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'newweb',
-        'USER': 'root',
-        'PASSWORD': 'dave',
+        'NAME': 'wwwachm1_portfolio',
+        'USER': 'wwwachm1_irfan',
+        'PASSWORD': 'ENB.M!9gqWWR',
         'HOST': 'localhost',
         'PORT': '3306',
     }
@@ -129,6 +129,7 @@ MEDIA_URL = 'media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 STATIC_URL = "static/"
+STATIC_ROOT = "/home/wwwachm1/public_html/portfolio"
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static')]
 
