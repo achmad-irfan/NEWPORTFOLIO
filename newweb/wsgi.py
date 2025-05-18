@@ -1,14 +1,4 @@
-"""
-WSGI config for newweb project.
-
-It exposes the WSGI callable as a module-level variable named ``application``.
-
-For more information on this file, see
-https://docs.djangoproject.com/en/4.2/howto/deployment/wsgi/
-"""
-
 import os
-
 from dotenv import load_dotenv
 from pathlib import Path
 
@@ -17,6 +7,6 @@ load_dotenv(os.path.join(BASE_DIR, '.env'))
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "newweb.settings")
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "newweb.settings.production")
 
 application = get_wsgi_application()
