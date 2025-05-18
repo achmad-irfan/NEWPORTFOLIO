@@ -127,5 +127,5 @@ STATICFILES_DIRS = [
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
-print(f"BASE_DIR = {BASE_DIR}")
+print(f"BASE_DIR = {MEDIA_DIRS}")
 print(f"SECRET_KEY = {SECRET_KEY}")
