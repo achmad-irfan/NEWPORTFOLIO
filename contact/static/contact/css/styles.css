@@ -22,6 +22,7 @@ i {
   .contact {
     flex-direction: column;
     gap: 20px;
+    align-items: center;
   }
   .contactItem {
     width: 50%;

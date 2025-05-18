@@ -1,0 +1,19 @@
+from .base import *
+
+DEBUG= False
+
+ALLOWED_HOSTS = ['www.achmad-irfan.my.id','achmad-irfan.my.id']
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': config('DB_NAME'),
+        'USER': config('DB_USER'),
+        'PASSWORD': config('DB_PASSWORD'),
+        'HOST': 'localhost',
+        'PORT': '3306',
+    }
+}
+
+STATIC_ROOT = "/home/wwwachm1/public_html/portfolio"
+MEDIA_ROOT = '/home/wwwachm1/public_html/portfolio/media'

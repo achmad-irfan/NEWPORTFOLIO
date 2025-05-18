@@ -12,3 +12,4 @@ urlpatterns = [
     path('page-<int:page>/', views.indexView.as_view(), name='project_page'),
 ]
 
+
