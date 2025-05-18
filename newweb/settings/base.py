@@ -59,7 +59,7 @@ ROOT_URLCONF = "newweb.urls"
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": ['templates'],
+        "DIRS": [os.path.join(BASE_DIR, 'templates')],
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [
@@ -128,3 +128,4 @@ STATICFILES_DIRS = [
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 print(f"BASE_DIR = {BASE_DIR}")
+print(f"SECRET_KEY = {SECRET_KEY}")
