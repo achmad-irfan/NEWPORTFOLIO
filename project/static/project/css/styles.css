@@ -4,14 +4,21 @@
 }
 
 .classification {
-  background-color: rgb(3, 22, 53);
-  border: 4px solid rgb(210, 186, 186);
-  box-shadow: 5px 5px white;
   display: flex;
   flex-direction: row;
-  gap: 40px;
+  gap: 20px;
   padding: 10px;
   border-radius: 5%;
+}
+
+.classification a {
+  border: 2px solid white;
+  padding: 3px;
+  text-align: center;
+  background-color: rgb(32, 58, 83);
+  width: 120px;
+  font-size: small;
+  border-radius: 20%;
 }
 
 .classification h3 {
@@ -66,19 +73,19 @@ button {
     width: 100%;
     height: auto;
   }
+
   .classification {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     width: 100%;
     font-size: small;
     gap: 5px;
+    border: 5px solid rgb(231, 220, 220);
   }
 
   .classification a {
-    border: 2px solid white;
-    padding: 3px;
-    text-align: center;
-    background-color: rgb(110, 132, 152);
+    width: 100%;
+    border-radius: 5%;
   }
 
   .classification h3 {
