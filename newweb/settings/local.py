@@ -10,11 +10,11 @@ ALLOWED_HOSTS = []
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'newweb',
-        'USER': 'root',
-        'PASSWORD': 'dave',
-        'HOST': 'localhost',
-        'PORT': '3306',
+        'NAME': config('DB_NAME_LOKAL'),
+        'USER': config('DB_USER_LOKAL'),
+        'PASSWORD': config('DB_PASSWORD_LOKAL'),
+        'HOST': config('DB_HOST_LOKAL'),
+        'PORT': config('DB_PORT_LOKAL'),
     }
 }
 
