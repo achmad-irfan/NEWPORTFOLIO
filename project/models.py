@@ -25,6 +25,7 @@ class Proyek(models.Model):
     client = models.CharField(max_length=55)
     output = models.URLField(default='a')
     detail = models.URLField(default='a')
+    embed= models.TextField(blank=True, max_length=500)
     slug = models.SlugField(blank=True, editable=False)
 
 

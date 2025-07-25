@@ -21,7 +21,7 @@ from django.views.generic import ListView, DetailView
 
 class indexView(ListView):
     model = Proyek
-    ordering = ['tanggal']
+    ordering = ['-tanggal']
     paginate_by = 6
     template_name = 'project/index.html'
 

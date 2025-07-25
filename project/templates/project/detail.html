@@ -30,17 +30,22 @@
     </button>
   </div>
   <div class="infomation">
+    <h4>Detail Project:</h4>
     <ul>
-      <li><h4>Nama : {{proyek.nama}}</h4></li>
-      <li><h4>Category : {{proyek.category}}</h4></li>
-      <li><h4>Client : {{proyek.client}}</h4></li>
-      <li><h4>Tanggal : {{proyek.tanggal}}</h4></li>
+      <li><p>Nama : {{proyek.nama}}</p></li>
+      <li><p>Category : {{proyek.category}}</p></li>
+      <li><p>Tanggal : {{proyek.tanggal}}</p></li>
       <li>
-        <h4>Output : <a href="{{proyek.output}}">Click Here</a></h4>
+        <p>Output : <a href="{{proyek.output}}">Click Here</a></p>
       </li>
     </ul>
   </div>
 </div>
-<button><a href="{% url 'app_project:project' %}">Back</a></button>
-
+<div class="embed">
+  <h4>Project Visualization:</h4>
+  {% if proyek.embed %}
+  <div class="embed-wrapper">{{ proyek.embed|safe }}</div>
+  {% endif %}
+</div>
+<button><a href="{% url 'app_project:project' %}">Back to Projects</a></button>
 {% endblock %}
