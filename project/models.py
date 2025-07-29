@@ -8,11 +8,11 @@ from django.utils.text import slugify
 class Proyek(models.Model):
     ITEM_CHOICES = [
         ('SQL', 'SQL'),
-        ('Power BI', 'Power BI'),
+        ('Power-BI', 'Power BI'),
         ('Tableau', 'Tableau'),
-        ('Python Dash', 'Python Dash'),
-        ('Python Django', 'Python Django'),
-        ('Data Science', 'Data Sciance')
+        ('Python-Dash', 'Python Dash'),
+        ('Python-Django', 'Python Django'),
+        ('Data-Science', 'Data Sciance')
     ]
     id = models.AutoField(primary_key=True)
     nama = models.CharField(max_length=250)
