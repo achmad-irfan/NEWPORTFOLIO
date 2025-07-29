@@ -32,24 +32,28 @@
 .thumbnail {
   display: grid;
   gap: 20px;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 300px));
+  grid-template-columns: repeat(auto-fit, minmax(350px, 350px));
   justify-content: center;
   width: 100%;
   margin: 0 auto;
 }
 
 .projectImage {
+  max-width: 350px;
+  width: 100%;
   border: 3px solid white;
   padding: 10px;
+  box-sizing: border-box;
 }
+
 .projectImage img {
   width: 100%;
-  max-width: 300px;
-  height: auto;
+  height: 200px;
   border-radius: 10px;
   border: 1px solid white;
   padding: 1px;
   object-fit: cover;
+  box-sizing: border-box;
 }
 
 .projectImage h6 {
