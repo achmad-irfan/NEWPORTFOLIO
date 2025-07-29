@@ -34,21 +34,34 @@
   gap: 20px;
   grid-template-columns: repeat(auto-fit, minmax(300px, 300px));
   justify-content: center;
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
 }
-.thumbnail img {
+
+.projectImage {
+  border: 3px solid white;
+  padding: 10px;
+}
+.projectImage img {
   width: 100%;
   max-width: 300px;
   height: auto;
   border-radius: 10px;
-  border: 5px solid white;
-  padding: 5px;
+  border: 1px solid white;
+  padding: 1px;
   object-fit: cover;
 }
 
+.projectImage h6 {
+  text-align: center;
+  margin-top: 10px;
+  padding: 10px;
+  background-color: rgb(77, 72, 72);
+  border-radius: 5px;
+}
+
 .carousel {
-  border: 5px solid rgb(255, 255, 255);
+  border: 5px solid rgb(1, 1, 1);
 }
 
 .detail {
@@ -75,7 +88,7 @@ button {
 
 .embed-wrapper {
   position: relative;
-  padding-bottom: 56.25%; 
+  padding-bottom: 56.25%;
   height: 0;
   overflow: hidden;
   margin-top: 10px;

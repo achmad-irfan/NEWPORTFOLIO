@@ -21,9 +21,12 @@
   </div>
   <div class="thumbnail">
     {% for item in page_obj %}
-    <a href="{% url 'app_project:detail' item.slug %}">
-      <img src="{{item.gambar.url}}" alt="alt" />
-    </a>
+    <div class="projectImage">
+      <a href="{% url 'app_project:detail' item.slug %}">
+        <img src="{{item.gambar.url}}" alt="alt" />
+      </a>
+      <h6>{{item.nama}}</h6>
+    </div>
     {% endfor %}
   </div>
   <div class="paginator">
