@@ -15,7 +15,7 @@
     <a class="nav-link active" aria-current="page" href="{% url 'app_project:projects_category' 'ALL' %}" data-category="ALL">ALL</a>
     {% for item in item %}
     <div class="itemClassification">
-      <a class="nav-link active" aria-current="page" href="{% url 'app_project:projects_category' item %}" data-category="{{ items }}">{{ item|upper }}</a>
+      <a class="nav-link active" aria-current="page" href="{% url 'app_project:projects_category' item %}" data-category="{{ item }}">{{ item|upper }}</a>
     </div>
     {% endfor %}
   </div>
