@@ -29,7 +29,7 @@ class indexView(ListView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         context['title'] = 'Projects'
-        context['item'] = ['SQL', 'Power-BI', 'Tableau',
+        context['item'] = ['Excel','SQL', 'Power-BI', 'Tableau',
                            'Dash', 'Django', 'Data-Science', 'Classification']
         return context
 

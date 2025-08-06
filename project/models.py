@@ -7,6 +7,7 @@ from django.utils.text import slugify
 
 class Proyek(models.Model):
     ITEM_CHOICES = [
+        ('Excel','Excel'),
         ('SQL', 'SQL'),
         ('Power-BI', 'Power BI'),
         ('Tableau', 'Tableau'),
