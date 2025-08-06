@@ -30,7 +30,7 @@ class indexView(ListView):
         context = super().get_context_data(**kwargs)
         context['title'] = 'Projects'
         context['item'] = ['Excel','SQL', 'Power-BI', 'Tableau',
-                           'Dash', 'Django', 'Data-Science', 'Classification']
+                           'Dash', 'Django']
         return context
 
     def get_queryset(self):
