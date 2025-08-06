@@ -11,7 +11,7 @@ class Proyek(models.Model):
         ('Power-BI', 'Power BI'),
         ('Tableau', 'Tableau'),
         ('Dash', 'Python Dash'),
-        ('Django', 'Python Django'),
+        ('Django', 'Django'),
         ('Data-Science', 'Data Sciance')
     ]
     id = models.AutoField(primary_key=True)
