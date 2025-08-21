@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     "services",
     "project",
     "contact",
+    "multiselectfield",
 ]
 
 MIDDLEWARE = [
