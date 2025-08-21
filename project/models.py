@@ -1,6 +1,7 @@
 from django.db import models
 from django.utils import timezone
 from django.utils.text import slugify
+from multiselectfield import MultiSelectField
 
 # create your models here.
 
@@ -11,12 +12,13 @@ class Proyek(models.Model):
         ('SQL', 'SQL'),
         ('Power-BI', 'Power BI'),
         ('Tableau', 'Tableau'),
-        ('Dash', 'Python Dash'),
+        ('Streamlit', 'Streamlit'),
+        ('Python', 'Python'),
         ('Django', 'Django')
     ]
     id = models.AutoField(primary_key=True)
     nama = models.CharField(max_length=250)
-    category = models.CharField(choices=ITEM_CHOICES, max_length=250)
+    category = MultiSelectField(choices=ITEM_CHOICES, max_length=250)
     gambar = models.ImageField(upload_to='media', blank=True)
     gambar2 = models.ImageField(upload_to='media', blank=True)
     gambar3 = models.ImageField(upload_to='media', blank=True)
