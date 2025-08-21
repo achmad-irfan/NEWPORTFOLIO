@@ -29,8 +29,8 @@ class indexView(ListView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         context['title'] = 'Projects'
-        context['item'] = ['Excel','SQL', 'Power-BI', 'Tableau',
-                           'Dash', 'Django']
+        context['item'] = ['Excel','SQL', 'Power-BI',
+                           'Python','Streamlit', 'Django']
         return context
 
     def get_queryset(self):
@@ -38,7 +38,7 @@ class indexView(ListView):
         category = self.kwargs.get('category')
 
         if category and category != "ALL":
-            queryset = queryset.filter(category=category)
+            queryset = queryset.filter(category__icontains=category)
 
         return queryset
     
