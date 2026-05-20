@@ -25,9 +25,9 @@ class Proyek(models.Model):
     gambar4 = models.ImageField(upload_to='media', blank=True)
     tanggal = models.DateField(default=timezone.now)
     client = models.CharField(max_length=55)
-    output = models.URLField(default='a')
-    detail = models.URLField(default='a')
-    github = models.URLField(default='a')
+    output = models.URLField(blank=True, null=True)
+    detail = models.URLField(blank=True, null=True)
+    github = models.URLField(blank=True, null=True)
     embed= models.TextField(blank=True, max_length=500)
     slug = models.SlugField(blank=True, editable=False)
 
