@@ -37,6 +37,7 @@
       <li><p>Tanggal : {{proyek.tanggal}}</p></li>
       <li>
         <p>Output : <a href="{{proyek.output}}">Click URL Here</a></p>
+        {% if proyek.github %}
         <p>Output : <a href="{{proyek.github}}">Click Github Respitory</a></p>
       </li>
     </ul>
