@@ -56,3 +56,33 @@ h5 {
     font-size: small;
   }
 }
+
+@media screen and (max-width: 360px) {
+  .content-content {
+    padding: 5px;
+  }
+
+  .serviceItem {
+    gap: 1px;
+    padding: 5px;
+    margin: 10px;
+  }
+
+  .serviceItemCol {
+    gap: 5px;
+  }
+
+  .serviceItem i {
+    font-size: 50px;
+  }
+
+  .serviceItem h5 {
+    grid-column: span 2;
+  }
+  h4 {
+    font-size: smaller;
+  }
+  h5 {
+    font-size: small;
+  }
+}

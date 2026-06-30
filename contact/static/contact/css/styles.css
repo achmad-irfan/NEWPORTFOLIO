@@ -37,3 +37,13 @@ i {
     font-size: small;
   }
 }
+
+@media screen and (max-width: 756px) {
+  .content-content {
+    padding: 15px;
+  }
+
+  .contactItem {
+    width: 80%;
+  }
+}
